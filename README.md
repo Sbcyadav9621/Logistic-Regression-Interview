@@ -27,45 +27,54 @@ In logistic regression, we are essentially trying to find the weights that will 
 
 # Logistic Regression Interview Questions
 
-1. What is log loss in logistic regression?
-   Log loss, also called cross-entroy loss, is the cost function used in logistic regression to measure how well the predicted probabilites match the actual class labels.
+# 1. What is log loss in logistic regression?
+   
+   Log loss, also called cross-entroy loss, is the cost function used in logistic regression to measure how well the predicted probabilites match    the actual class labels.
    It penalizes wrong predictions, especially when the model is very confident but incorrect. Lower log loss means better model performance.
 
-2. How does logistic regression differ from linear regression?
-   There are several differences between the logistic regression and linear regression models. One major difference is that logistic regression is useful for solving classification problems, while linear regression is helpful for resolving regression problems.
-   You can predict the value of categorical variables in logistic regression, while you can predict the value of continuous variables in linear regression. You can classify samples by finding the S-shaped sigmoid curve in logistic regression, while you can predict the continuous value output by finding the best-fitted line in linear regression.
+# 2. How does logistic regression differ from linear regression?
+   
+   There are several differences between the logistic regression and linear regression models. One major difference is that logistic regression      is useful for solving classification problems, while linear regression is helpful for resolving regression problems.
+   You can predict the value of categorical variables in logistic regression, while you can predict the value of continuous variables in linear      regression. You can classify samples by finding the S-shaped sigmoid curve in logistic regression, while you can predict the continuous value     output by finding the best-fitted line in linear regression.
    In logistic regression we use maximum likelihood estimation to calculate the loss function.
    In linear regression we use mean squared error for calulating the loss function.
 
-3. How does the softmax and sigmoid functions differ from each other?
-   The softmax function, also known as the normalised exponential function or softargmax, it is useful in the multinomial logistic regression model to classify the multiple classes.
-   The sigmoid function is a mathematical function is a mathematicl funciton that forms an S-shaped curve, known as sigmoid curve, on a graph. It applies to the binary logistic regression mdoel in multi-label classification.
+# 3. How does the softmax and sigmoid functions differ from each other?
+   
+   The softmax function, also known as the normalised exponential function or softargmax, it is useful in the multinomial logistic regression        model to classify the multiple classes.
+   The sigmoid function is a mathematical function is a mathematicl funciton that forms an S-shaped curve, known as sigmoid curve, on a graph. It    applies to the binary logistic regression mdoel in multi-label classification.
 
-4. What is regularisation and why is it important?
-   Regularisation is a technique that is used to avoid the problem of overfitting in logistic regression, it is important because it modifies learning algorithms to enable them to generalise better on usneen data and reduce their generalisation errors.
+# 4. What is regularisation and why is it important?
+   
+   Regularisation is a technique that is used to avoid the problem of overfitting in logistic regression, it is important because it modifies        learning algorithms to enable them to generalise better on usneen data and reduce their generalisation errors.
 
-5. How does logistic regression perfrorm feature selection?
+# 5. How does logistic regression perfrorm feature selection?
+   
    Logistic regression naturally implements feature selection through L1 regularization(LASSO) which introduces sparsity.
-   L1 regularisation adds a penatly term to the loss function that is the absolute value of the coefficents. This tends to shrink coefficients to zero, effectively removing the associated fetures. Regularization strength is typically controled by the parameter Lambda.
+   L1 regularisation adds a penatly term to the loss function that is the absolute value of the coefficents. This tends to shrink coefficients to    zero, effectively removing the associated fetures. Regularization strength is typically controled by the parameter Lambda.
 
-6. Why is it called regression if it is a classification algorithm?
+# 6. Why is it called regression if it is a classification algorithm?
+    
    Because it models the log-odds(logit) as a linear combination of input features, similar to linear regression.
 
-7. What is the decision boundary in logistic regression?
+# 7. What is the decision boundary in logistic regression?
+    
    It is the threshold(usually 0.5) above which we predict class 1 and below which class 0.
 
-8. What is log-odds(logit)?
+# 8. What is log-odds(logit)?
    Log-odds is the logarithm of the odds ratio
    i.e log(p/1-p)
    it converts probabilities into a linear scale.
 
-9. What are the assumptions of Logistic regression?
+# 9. What are the assumptions of Logistic regression?
+    
     - Binary dependent variable.
     - Indpendence of observations
     - No multicollinearity.
     - Linear relationship between predictors and log-odds.
 
-10. How do you handle multicollinearity?
+# 10. How do you handle multicollinearity?
+    
     - Remove correlated features
         When two or more indenpendent variables are highly correlated, logistic regression faces
         - Unstable coefficients
